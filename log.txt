@@ -1,0 +1,14 @@
+-------------------------------------------------------------
+writer: Timoha; payer: Timoha; recipient: Timofey; value: 10
+writer: Timofey; payer: Ilya; recipient: Timofey; value: 4950
+writer: Timofey; payer: Ilya; recipient: Timoha; value: 4367
+writer: Timofey; payer: Timofey; recipient: all; value: 750
+writer: Timofey; payer: Timofey; recipient: Timoha; value: 10
+writer: Timofey; payer: Valek; recipient: Ilya; value: 5700
+writer: Timofey; payer: Valek; recipient: Timofey; value: 5700
+writer: Timofey; payer: Timofey; recipient: Valek; value: 7300
+writer: Timofey; payer: Timoha; recipient: Ilya; value: 10
+writer: Timofey; payer: Timofey; recipient: Valek; value: 1
+writer: Timofey; payer: Timofey; recipient: Timoha; value: 110000
+writer: Timofey; payer: Valek; recipient: Timofey; value: 6000
+writer: Timofey; payer: Timofey; recipient: Valek; value: 1000
