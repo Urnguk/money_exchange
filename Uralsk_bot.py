@@ -116,9 +116,15 @@ def get_value(message):
         log.write("writer: {0}; payer: {1}; recipient: {2}; value: {3}\n"
                   .format(users_dict[id], payer, recipient, value))
         work.pay(payer, recipient, value)
-    bot.send_message(users_dict_reverse[recipient],
-                     "{} сообщил, что {} заплатил за тебя {} теньге."
-                     .format(users_dict[id], payer, value))
+    if recipient == "all":
+        for user_id in users_dict.keys():
+            bot.send_message(user_id,
+                             "{} сообщил, что {} заплатил за всех {} теньге."
+                             .format(users_dict[id], payer, value))
+    else:
+        bot.send_message(users_dict_reverse[recipient],
+                         "{} сообщил, что {} заплатил за тебя {} теньге."
+                         .format(users_dict[id], payer, value))
     markup.add(types.KeyboardButton("Вернуться в меню"))
     bot.send_message(id,
                      "Оплата успешно произведена. Напиши что угодно, чтобы вернуться в меню.",
