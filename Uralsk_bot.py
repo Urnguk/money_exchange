@@ -41,7 +41,7 @@ def message_reply(message):
             user_button = types.KeyboardButton(user_name)
             markup.add(user_button)
         bot.send_message(id,
-                         "Выберите плательщика",
+                         "Кто платил?",
                          reply_markup=markup)
         bot.register_next_step_handler(message, get_payer)
         return
@@ -73,7 +73,7 @@ def get_payer(message):
         markup.add(user_button)
     markup.add(types.KeyboardButton("all"))
     bot.send_message(id,
-                     "Выберите получателя",
+                     "За кого?",
                      reply_markup=markup)
     bot.register_next_step_handler(message, get_recipient)
 
