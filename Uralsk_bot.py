@@ -3,7 +3,6 @@ from telebot import types
 from money_data import MoneyOpen
 from wakepy import set_keepawake, unset_keepawake
 
-token = "5955076570:AAFkRSP0Jzgp05iTtpP7UTI06GeTnK-nDcw"
 bot = telebot.TeleBot(token)
 users_dict = {428041713: "Timofey", 255501902: "Ilya", 202167212: "Valek", 115726489: "Timoha"}
 users_dict_reverse = {"Timofey": 428041713, "Ilya": 255501902, "Valek": 202167212, "Timoha": 115726489}
